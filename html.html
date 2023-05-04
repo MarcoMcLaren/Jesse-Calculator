@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Solar System Calculator</h1>
+        <form id="solar-calculator">
+            <label for="lights">Number of Lights:</label>
+            <input type="number" id="lights" min="0" step="1" required>
+            
+            <label for="tvs">Number of TVs:</label>
+            <input type="number" id="tvs" min="0" step="1" required>
+
+            <label for="fridges">Number of Fridges:</label>
+            <input type="number" id="fridges" min="0" step="1" required>
+
+            <label for="air-conditioners">Number of Air Conditioners:</label>
+            <input type="number" id="air-conditioners" min="0" step="1" required>
+
+            <label for="stove-hours">Hours of Stove Usage:</label>
+            <input type="number" id="stove-hours" min="0" step="1" required>
+
+            <label for="geyser-hours">Hours of Geyser Usage:</label>
+            <input type="number" id="geyser-hours" min="0" step="1" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <p id="solar-panels"></p>
+            <p id="inverter-size"></p>
+            <p id="battery-size"></p>
+        </div>
+    </div>
+</body>
+</html>
